@@ -1,0 +1,4 @@
+# Ignorar un archivo en particular por su ruta
+house-prices-tp.csv
+datos/mi_archivo_secreto.json
+.DS_Store
