@@ -12,6 +12,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 df = pd.read_csv('./data/house-prices-tp.csv')
@@ -22,6 +23,29 @@ print("#"*70)
 print("Primeras 10 filas de df:")
 print("#"*70)
 print(df.head(10))
+
+print("#"*90)
+print("Describe de df:")
+print("#"*90)
+print(df.describe().T)
+
+#Verificamos si hay registros duplicados
+duplicados = df.duplicated().sum()
+print("#"*70)
+print(f"Cantidad de registros duplicados: {duplicados}")
+
+nulos_por_columna = df.isna().sum()
+print("#"*70)
+print("Cantidad de nulos por columna:")
+print("#"*70)
+print(nulos_por_columna)
+
+
+nulos_por_fila = df.isna().sum(axis=1)
+print("#"*70)
+print("Cantidad de nulos por fila:")
+print("#"*70)
+print(nulos_por_fila.value_counts().sort_index())
 
 # Filtra las filas que acumulan más de 5 NaN
 filas_mas_5_nulos = df[df.isna().sum(axis=1) > 5]
@@ -53,7 +77,25 @@ print(df_filtrado.info())
 print("#"*70)
 print("Describe de df_filtrado:")
 print("#"*70)
-print(df_filtrado.describe())
+print(df_filtrado.describe().T)
+
+# Visualización de la distribución de la variable objetivo (MEDV)
+fig, axes = plt.subplots(1, 2, figsize=(12, 4))
+sns.histplot(df["MEDV"].dropna(), kde=True, ax=axes[0])
+axes[0].set_title("Distribución de MEDV")
+sns.boxplot(x=df["MEDV"].dropna(), ax=axes[1])
+axes[1].set_title("Boxplot de MEDV")
+plt.tight_layout()
+plt.savefig('./outputs/distribucion_medv_pre_imputacion.png', dpi=200)
+plt.show()
+
+# Histograma de cada variable numérica
+plt.figure(figsize=(18, 12))
+df.hist(bins=20, edgecolor='black')
+plt.tight_layout()
+plt.savefig('./outputs/histogramas_variables_pre_imputacion.png', dpi=200)
+plt.show()
+
 
 #A los valores faltanes se les imputa el valor de sus medianas
 df_filtrado = df_filtrado.fillna(df_filtrado.median())
@@ -64,15 +106,25 @@ print(df_filtrado.info())
 print("#"*70)
 print("Describe de df_filtrado imputando medianas")
 print("#"*70)
-print(df_filtrado.describe())
+print(df_filtrado.describe().T)
 print("#"*70)
 
+
+# Visualización de la distribución de la variable objetivo (MEDV)
+fig, axes = plt.subplots(1, 2, figsize=(12, 4))
+sns.histplot(df["MEDV"].dropna(), kde=True, ax=axes[0])
+axes[0].set_title("Distribución de MEDV")
+sns.boxplot(x=df["MEDV"].dropna(), ax=axes[1])
+axes[1].set_title("Boxplot de MEDV")
+plt.tight_layout()
+plt.savefig('./outputs/distribucion_medv_post_imputacion.png', dpi=200)
+plt.show()
 
 # Histograma de cada variable numérica
 plt.figure(figsize=(18, 12))
 df.hist(bins=20, edgecolor='black')
 plt.tight_layout()
-#plt.savefig('./outputs/histogramas_variables.png', dpi=200)
+plt.savefig('./outputs/histogramas_variables_post_imputacion.png', dpi=200)
 plt.show()
 
 # Scatterplot entre variables numéricas
