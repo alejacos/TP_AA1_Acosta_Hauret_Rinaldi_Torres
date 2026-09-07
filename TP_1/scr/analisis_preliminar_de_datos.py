@@ -15,9 +15,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-df = pd.read_csv('./data/house-prices-tp.csv')
+dfc = pd.read_csv('./data/house-prices-tp.csv')
+df = dfc.copy()
 print("\nInfo dataset original:\n")
 df.info()
+#Cambiamos el tipo de variable de CHAS a int
+#df['CHAS'] = df['CHAS'].astype(int)
+df['CHAS'].isnull().sum()
 print("\n")
 print("#"*70)
 print("Primeras 10 filas de df:")
