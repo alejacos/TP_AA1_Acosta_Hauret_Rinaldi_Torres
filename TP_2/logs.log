@@ -7140,3 +7140,11 @@ Alternately, you can install this by running `pip install pycaret[models]`
                                 subsample_for_bin=200000, subsample_freq=0))],
          verbose=False)
 2026-11-13 16:24:56,760:INFO:save_model() successfully completed......................................
+2026-11-22 09:00:50,805:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-11-22 09:00:50,806:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-11-22 09:00:50,806:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-11-22 09:00:50,806:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
