@@ -7,7 +7,7 @@ ENV TF_CPP_MIN_LOG_LEVEL=2
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY app.py .
+COPY inferencia.py .
 COPY preprocesador.joblib .
 COPY modelo_lluvia_australia_tuned.keras .
 
