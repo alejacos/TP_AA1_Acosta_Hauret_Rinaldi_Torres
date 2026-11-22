@@ -9354,3 +9354,12 @@ Alternately, you can install this by running `pip install pycaret[models]`
 2026-11-22 19:58:43,694:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
   warnings.warn(
 
+2026-11-22 20:01:16,434:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 20:01:21,165:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 20:02:46,574:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+

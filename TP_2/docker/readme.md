@@ -1,20 +1,17 @@
-para armar el docker usamos:
+Para armar el docker usamos:
 docker build -t lluvia-australia-nn .
 
-para correrlo:
+Para correrlo:
 docker run -d -p 8000:8000 --name api-lluvia lluvia-australia-nn
 
-para usarlo, es via localhost con el browser:
+Para usarlo, es via localhost con el browser:
 http://localhost:8000/docs
 
-Ejecuta una predicción de prueba en esa pantalla:
-Verás un título que dice Predicción de Lluvias en Australia y debajo una barra verde que dice POST /predict.
-
-Haz clic sobre esa barra verde para desplegarla.
-
-Presiona el botón Try it out (arriba a la derecha del cuadro desplegado).
-
-En el recuadro de texto Request body, borra lo que aparece y pega un diccionario JSON con datos meteorológicos, por ejemplo:
+Ejecutar una predicción de prueba en esa pantalla:
+Se puede observar un título que dice Predicción de Lluvias en Australia y debajo una barra verde que dice POST /predict.
+Hacer clic sobre esa barra verde para desplegarla.
+Presionar el botón Try it out (arriba a la derecha del cuadro desplegado).
+En el recuadro de texto Request body, borrar lo que aparece y pegar un diccionario JSON con datos meteorológicos, por ejemplo:
 
 a) con lluvia:
 JSON
@@ -60,7 +57,11 @@ b)sin lluvia:
   "RainToday": 0
 }
 
+Hacer clic en el botón azul ancho que dice Execute.
 
-Haz clic en el botón azul ancho que dice Execute.
+Abajo en la página, en la sección Responses: si todo está bien, verás un código 200 y el resultado JSON con "RainTomorrow" y "probabilidad_lluvia".
 
-Baja un poco la página hasta la sección Responses: si todo está bien, verás un código 200 y el resultado JSON con "RainTomorrow" y "probabilidad_lluvia".
+Aclaracion, si necesitamos borrar el docker y armar uno nuevo, hacer lo siguiente:
+docker rm -f api-lluvia
+docker build -t lluvia-australia-nn .
+docker run -d -p 8000:8000 --name api-lluvia lluvia-australia-nn
