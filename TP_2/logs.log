@@ -7148,3 +7148,1379 @@ Alternately, you can install this by running `pip install pycaret[models]`
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
 2026-11-22 09:00:50,806:WARNING:
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-11-22 19:01:24,930:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-11-22 19:01:24,932:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-11-22 19:01:24,932:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-11-22 19:01:24,932:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-11-22 19:02:43,752:INFO:PyCaret ClassificationExperiment
+2026-11-22 19:02:43,752:INFO:Logging name: clf-default-name
+2026-11-22 19:02:43,752:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2026-11-22 19:02:43,752:INFO:version 3.3.2
+2026-11-22 19:02:43,752:INFO:Initializing setup()
+2026-11-22 19:02:43,752:INFO:self.USI: 95db
+2026-11-22 19:02:43,753:INFO:self._variable_keys: {'USI', 'logging_param', '_ml_usecase', 'gpu_param', 'y', 'fold_groups_param', 'X_train', 'y_test', 'pipeline', 'fix_imbalance', 'gpu_n_jobs_param', 'log_plots_param', 'exp_name_log', 'html_param', 'n_jobs_param', 'X_test', 'idx', 'memory', 'exp_id', 'X', '_available_plots', 'target_param', 'y_train', 'is_multiclass', 'data', 'fold_generator', 'fold_shuffle_param', 'seed'}
+2026-11-22 19:02:43,753:INFO:Checking environment
+2026-11-22 19:02:43,753:INFO:python_version: 3.10.22
+2026-11-22 19:02:43,753:INFO:python_build: ('main', 'Oct 29 2026 20:33:25')
+2026-11-22 19:02:43,753:INFO:machine: x86_64
+2026-11-22 19:02:43,753:INFO:platform: Linux-7.2.15-76070215-generic-x86_64-with-glibc2.44
+2026-11-22 19:02:43,753:INFO:Memory: svmem(total=16641699840, available=7770021888, percent=53.3, used=8871677952, free=2025062400, active=4648939520, inactive=6901637120, buffers=233590784, cached=8004620288, shared=1237385216, slab=679022592)
+2026-11-22 19:02:43,754:INFO:Physical Core: 4
+2026-11-22 19:02:43,754:INFO:Logical Core: 4
+2026-11-22 19:02:43,754:INFO:Checking libraries
+2026-11-22 19:02:43,754:INFO:System:
+2026-11-22 19:02:43,754:INFO:    python: 3.10.22 (main, Oct 29 2026, 20:33:25) [GCC 14.3.0]
+2026-11-22 19:02:43,754:INFO:executable: /home/g/miniconda3/envs/aa2pycaret/bin/python
+2026-11-22 19:02:43,754:INFO:   machine: Linux-7.2.15-76070215-generic-x86_64-with-glibc2.44
+2026-11-22 19:02:43,754:INFO:PyCaret required dependencies:
+2026-11-22 19:02:43,802:INFO:                 pip: 26.2.2
+2026-11-22 19:02:43,803:INFO:          setuptools: 84.2.1
+2026-11-22 19:02:43,803:INFO:             pycaret: 3.3.2
+2026-11-22 19:02:43,803:INFO:             IPython: 8.39.0
+2026-11-22 19:02:43,803:INFO:          ipywidgets: 8.1.9
+2026-11-22 19:02:43,803:INFO:                tqdm: 4.70.1
+2026-11-22 19:02:43,804:INFO:               numpy: 1.26.4
+2026-11-22 19:02:43,804:INFO:              pandas: 2.1.4
+2026-11-22 19:02:43,804:INFO:              jinja2: 3.1.6
+2026-11-22 19:02:43,804:INFO:               scipy: 1.11.4
+2026-11-22 19:02:43,804:INFO:              joblib: 1.3.2
+2026-11-22 19:02:43,804:INFO:             sklearn: 1.4.2
+2026-11-22 19:02:43,804:INFO:                pyod: 3.4.0
+2026-11-22 19:02:43,804:INFO:            imblearn: 0.14.2
+2026-11-22 19:02:43,804:INFO:   category_encoders: 2.7.0
+2026-11-22 19:02:43,804:INFO:            lightgbm: 4.7.0
+2026-11-22 19:02:43,804:INFO:               numba: 0.68.1
+2026-11-22 19:02:43,805:INFO:            requests: 2.34.2
+2026-11-22 19:02:43,805:INFO:          matplotlib: 3.7.5
+2026-11-22 19:02:43,805:INFO:          scikitplot: 0.3.7
+2026-11-22 19:02:43,805:INFO:         yellowbrick: 1.5
+2026-11-22 19:02:43,805:INFO:              plotly: 6.9.0
+2026-11-22 19:02:43,805:INFO:    plotly-resampler: Not installed
+2026-11-22 19:02:43,805:INFO:             kaleido: 1.5.1
+2026-11-22 19:02:43,805:INFO:           schemdraw: 0.15
+2026-11-22 19:02:43,805:INFO:         statsmodels: 0.15.0
+2026-11-22 19:02:43,805:INFO:              sktime: 0.26.0
+2026-11-22 19:02:43,806:INFO:               tbats: 1.1.3
+2026-11-22 19:02:43,806:INFO:            pmdarima: 2.0.4
+2026-11-22 19:02:43,806:INFO:              psutil: 7.2.2
+2026-11-22 19:02:43,806:INFO:          markupsafe: 3.0.4
+2026-11-22 19:02:43,806:INFO:             pickle5: Not installed
+2026-11-22 19:02:43,806:INFO:         cloudpickle: 3.1.2
+2026-11-22 19:02:43,806:INFO:         deprecation: 2.1.0
+2026-11-22 19:02:43,806:INFO:              xxhash: 4.1.0
+2026-11-22 19:02:43,806:INFO:           wurlitzer: 3.1.1
+2026-11-22 19:02:43,806:INFO:PyCaret optional dependencies:
+2026-11-22 19:02:43,821:INFO:                shap: 0.49.1
+2026-11-22 19:02:43,821:INFO:           interpret: Not installed
+2026-11-22 19:02:43,821:INFO:                umap: Not installed
+2026-11-22 19:02:43,821:INFO:     ydata_profiling: Not installed
+2026-11-22 19:02:43,821:INFO:  explainerdashboard: Not installed
+2026-11-22 19:02:43,821:INFO:             autoviz: Not installed
+2026-11-22 19:02:43,821:INFO:           fairlearn: Not installed
+2026-11-22 19:02:43,821:INFO:          deepchecks: Not installed
+2026-11-22 19:02:43,821:INFO:             xgboost: Not installed
+2026-11-22 19:02:43,821:INFO:            catboost: Not installed
+2026-11-22 19:02:43,821:INFO:              kmodes: Not installed
+2026-11-22 19:02:43,822:INFO:             mlxtend: Not installed
+2026-11-22 19:02:43,822:INFO:       statsforecast: Not installed
+2026-11-22 19:02:43,822:INFO:        tune_sklearn: Not installed
+2026-11-22 19:02:43,822:INFO:                 ray: Not installed
+2026-11-22 19:02:43,822:INFO:            hyperopt: Not installed
+2026-11-22 19:02:43,822:INFO:              optuna: Not installed
+2026-11-22 19:02:43,822:INFO:               skopt: Not installed
+2026-11-22 19:02:43,822:INFO:              mlflow: Not installed
+2026-11-22 19:02:43,822:INFO:              gradio: Not installed
+2026-11-22 19:02:43,822:INFO:             fastapi: Not installed
+2026-11-22 19:02:43,822:INFO:             uvicorn: Not installed
+2026-11-22 19:02:43,822:INFO:              m2cgen: Not installed
+2026-11-22 19:02:43,822:INFO:           evidently: Not installed
+2026-11-22 19:02:43,822:INFO:               fugue: Not installed
+2026-11-22 19:02:43,822:INFO:           streamlit: Not installed
+2026-11-22 19:02:43,822:INFO:             prophet: Not installed
+2026-11-22 19:02:43,822:INFO:None
+2026-11-22 19:02:43,823:INFO:Set up data.
+2026-11-22 19:02:43,964:INFO:Set up folding strategy.
+2026-11-22 19:02:43,964:INFO:Set up train/test split.
+2026-11-22 19:02:44,029:INFO:Set up index.
+2026-11-22 19:02:44,034:INFO:Assigning column types.
+2026-11-22 19:02:44,088:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2026-11-22 19:02:44,137:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-11-22 19:02:44,146:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-11-22 19:02:44,184:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-11-22 19:02:44,185:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-11-22 19:02:44,233:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2026-11-22 19:02:44,234:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-11-22 19:02:44,265:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-11-22 19:02:44,265:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-11-22 19:02:44,266:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2026-11-22 19:02:44,315:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-11-22 19:02:44,345:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-11-22 19:02:44,345:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-11-22 19:02:44,393:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2026-11-22 19:02:44,422:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-11-22 19:02:44,422:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-11-22 19:02:44,423:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2026-11-22 19:02:44,502:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-11-22 19:02:44,503:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-11-22 19:02:44,581:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-11-22 19:02:44,581:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-11-22 19:02:44,583:INFO:Preparing preprocessing pipeline...
+2026-11-22 19:02:44,591:INFO:Set up label encoding.
+2026-11-22 19:02:44,591:INFO:Set up date feature engineering.
+2026-11-22 19:02:44,591:INFO:Set up simple imputation.
+2026-11-22 19:02:44,624:INFO:Set up encoding of ordinal features.
+2026-11-22 19:02:44,640:INFO:Set up encoding of categorical features.
+2026-11-22 19:02:44,640:INFO:Set up imbalanced handling.
+2026-11-22 19:02:44,640:INFO:Set up feature normalization.
+2026-11-22 19:02:48,568:INFO:Finished creating preprocessing pipeline.
+2026-11-22 19:02:48,601:INFO:Pipeline: Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['Date'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclu...
+                                                              min_samples_leaf=20,
+                                                              return_df=True,
+                                                              smoothing=10,
+                                                              verbose=0))),
+                ('balance',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              random_state=42,
+                                                                              sampling_strategy='auto')))),
+                ('normalize',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True)))],
+         verbose=False)
+2026-11-22 19:02:48,601:INFO:Creating final display dataframe.
+2026-11-22 19:02:52,365:INFO:Setup _display_container:                     Description             Value
+0                    Session id                42
+1                        Target      RainTomorrow
+2                   Target type            Binary
+3                Target mapping     No: 0, Yes: 1
+4           Original data shape      (140747, 23)
+5        Transformed data shape      (195339, 70)
+6   Transformed train set shape      (153114, 70)
+7    Transformed test set shape       (42225, 70)
+8              Numeric features                16
+9                 Date features                 1
+10         Categorical features                 5
+11     Rows with missing values             59.9%
+12                   Preprocess              True
+13              Imputation type            simple
+14           Numeric imputation              mean
+15       Categorical imputation              mode
+16     Maximum one-hot encoding                25
+17              Encoding method              None
+18                Fix imbalance              True
+19         Fix imbalance method             SMOTE
+20                    Normalize              True
+21             Normalize method            zscore
+22               Fold Generator   TimeSeriesSplit
+23                  Fold Number                 5
+24                     CPU Jobs                -1
+25                      Use GPU             False
+26               Log Experiment             False
+27              Experiment Name  clf-default-name
+28                          USI              95db
+2026-11-22 19:02:52,480:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-11-22 19:02:52,481:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-11-22 19:02:52,573:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-11-22 19:02:52,573:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2026-11-22 19:02:52,575:INFO:setup() successfully completed in 8.82s...............
+2026-11-22 19:02:52,575:INFO:Initializing compare_models()
+2026-11-22 19:02:52,575:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, include=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2026-11-22 19:02:52,575:INFO:Checking exceptions
+2026-11-22 19:02:52,625:INFO:Preparing display monitor
+2026-11-22 19:02:52,656:INFO:Initializing Logistic Regression
+2026-11-22 19:02:52,657:INFO:Total runtime is 1.3792514801025391e-05 minutes
+2026-11-22 19:02:52,662:INFO:SubProcess create_model() called ==================================
+2026-11-22 19:02:52,663:INFO:Initializing create_model()
+2026-11-22 19:02:52,663:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, estimator=lr, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7000f1797d30>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-11-22 19:02:52,663:INFO:Checking exceptions
+2026-11-22 19:02:52,663:INFO:Importing libraries
+2026-11-22 19:02:52,663:INFO:Copying training dataset
+2026-11-22 19:02:52,768:INFO:Defining folds
+2026-11-22 19:02:52,769:INFO:Declaring metric variables
+2026-11-22 19:02:52,774:INFO:Importing untrained model
+2026-11-22 19:02:52,779:INFO:Logistic Regression Imported successfully
+2026-11-22 19:02:52,794:INFO:Starting cross validation
+2026-11-22 19:02:52,801:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2026-11-22 19:02:54,747:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-11-22 19:02:55,224:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-11-22 19:02:55,237:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-11-22 19:02:55,238:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-11-22 19:02:56,157:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:02:56,373:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:02:56,589:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:02:57,384:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:02:57,516:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:02:57,648:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:02:59,558:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:02:59,685:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:02:59,812:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:00,468:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:00,598:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:00,728:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:02,845:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:02,976:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:03,107:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:03,285:INFO:Calculating mean and std
+2026-11-22 19:03:03,287:INFO:Creating metrics dataframe
+2026-11-22 19:03:03,292:INFO:Uploading results into container
+2026-11-22 19:03:03,294:INFO:Uploading model into container now
+2026-11-22 19:03:03,295:INFO:_master_model_container: 1
+2026-11-22 19:03:03,295:INFO:_display_container: 2
+2026-11-22 19:03:03,296:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=42, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2026-11-22 19:03:03,297:INFO:create_model() successfully completed......................................
+2026-11-22 19:03:03,412:INFO:SubProcess create_model() end ==================================
+2026-11-22 19:03:03,413:INFO:Creating metrics dataframe
+2026-11-22 19:03:03,421:INFO:Initializing K Neighbors Classifier
+2026-11-22 19:03:03,421:INFO:Total runtime is 0.1794155200322469 minutes
+2026-11-22 19:03:03,426:INFO:SubProcess create_model() called ==================================
+2026-11-22 19:03:03,427:INFO:Initializing create_model()
+2026-11-22 19:03:03,427:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, estimator=knn, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7000f1797d30>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-11-22 19:03:03,427:INFO:Checking exceptions
+2026-11-22 19:03:03,427:INFO:Importing libraries
+2026-11-22 19:03:03,427:INFO:Copying training dataset
+2026-11-22 19:03:03,501:INFO:Defining folds
+2026-11-22 19:03:03,502:INFO:Declaring metric variables
+2026-11-22 19:03:03,505:INFO:Importing untrained model
+2026-11-22 19:03:03,510:INFO:K Neighbors Classifier Imported successfully
+2026-11-22 19:03:03,520:INFO:Starting cross validation
+2026-11-22 19:03:03,527:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2026-11-22 19:03:16,239:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:16,487:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:16,747:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:25,538:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:25,715:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:25,904:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:32,908:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:33,086:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:33,254:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:40,283:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:40,412:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:40,542:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:57,810:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:57,943:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:58,074:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:58,256:INFO:Calculating mean and std
+2026-11-22 19:03:58,258:INFO:Creating metrics dataframe
+2026-11-22 19:03:58,262:INFO:Uploading results into container
+2026-11-22 19:03:58,265:INFO:Uploading model into container now
+2026-11-22 19:03:58,266:INFO:_master_model_container: 2
+2026-11-22 19:03:58,266:INFO:_display_container: 2
+2026-11-22 19:03:58,267:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2026-11-22 19:03:58,267:INFO:create_model() successfully completed......................................
+2026-11-22 19:03:58,363:INFO:SubProcess create_model() end ==================================
+2026-11-22 19:03:58,363:INFO:Creating metrics dataframe
+2026-11-22 19:03:58,371:INFO:Initializing Naive Bayes
+2026-11-22 19:03:58,372:INFO:Total runtime is 1.0952608187993367 minutes
+2026-11-22 19:03:58,376:INFO:SubProcess create_model() called ==================================
+2026-11-22 19:03:58,376:INFO:Initializing create_model()
+2026-11-22 19:03:58,377:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, estimator=nb, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7000f1797d30>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-11-22 19:03:58,377:INFO:Checking exceptions
+2026-11-22 19:03:58,377:INFO:Importing libraries
+2026-11-22 19:03:58,377:INFO:Copying training dataset
+2026-11-22 19:03:58,449:INFO:Defining folds
+2026-11-22 19:03:58,449:INFO:Declaring metric variables
+2026-11-22 19:03:58,453:INFO:Importing untrained model
+2026-11-22 19:03:58,458:INFO:Naive Bayes Imported successfully
+2026-11-22 19:03:58,465:INFO:Starting cross validation
+2026-11-22 19:03:58,470:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2026-11-22 19:03:59,634:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:59,766:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:03:59,897:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:01,027:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:01,175:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:01,334:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:02,455:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:02,618:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:02,780:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:03,469:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:03,599:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:03,729:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:05,376:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:05,530:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:05,684:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:05,897:INFO:Calculating mean and std
+2026-11-22 19:04:05,898:INFO:Creating metrics dataframe
+2026-11-22 19:04:05,901:INFO:Uploading results into container
+2026-11-22 19:04:05,902:INFO:Uploading model into container now
+2026-11-22 19:04:05,902:INFO:_master_model_container: 3
+2026-11-22 19:04:05,902:INFO:_display_container: 2
+2026-11-22 19:04:05,903:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2026-11-22 19:04:05,903:INFO:create_model() successfully completed......................................
+2026-11-22 19:04:05,993:INFO:SubProcess create_model() end ==================================
+2026-11-22 19:04:05,993:INFO:Creating metrics dataframe
+2026-11-22 19:04:06,002:INFO:Initializing Decision Tree Classifier
+2026-11-22 19:04:06,002:INFO:Total runtime is 1.2224401235580444 minutes
+2026-11-22 19:04:06,007:INFO:SubProcess create_model() called ==================================
+2026-11-22 19:04:06,008:INFO:Initializing create_model()
+2026-11-22 19:04:06,008:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, estimator=dt, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7000f1797d30>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-11-22 19:04:06,008:INFO:Checking exceptions
+2026-11-22 19:04:06,008:INFO:Importing libraries
+2026-11-22 19:04:06,008:INFO:Copying training dataset
+2026-11-22 19:04:06,087:INFO:Defining folds
+2026-11-22 19:04:06,087:INFO:Declaring metric variables
+2026-11-22 19:04:06,105:INFO:Importing untrained model
+2026-11-22 19:04:06,110:INFO:Decision Tree Classifier Imported successfully
+2026-11-22 19:04:06,119:INFO:Starting cross validation
+2026-11-22 19:04:06,126:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2026-11-22 19:04:08,925:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:09,098:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:09,271:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:10,955:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:11,113:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:11,272:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:13,647:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:13,807:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:13,965:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:16,037:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:16,167:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:16,295:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:20,738:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:20,871:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:21,003:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:21,185:INFO:Calculating mean and std
+2026-11-22 19:04:21,186:INFO:Creating metrics dataframe
+2026-11-22 19:04:21,188:INFO:Uploading results into container
+2026-11-22 19:04:21,189:INFO:Uploading model into container now
+2026-11-22 19:04:21,190:INFO:_master_model_container: 4
+2026-11-22 19:04:21,190:INFO:_display_container: 2
+2026-11-22 19:04:21,191:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, random_state=42, splitter='best')
+2026-11-22 19:04:21,191:INFO:create_model() successfully completed......................................
+2026-11-22 19:04:21,284:INFO:SubProcess create_model() end ==================================
+2026-11-22 19:04:21,285:INFO:Creating metrics dataframe
+2026-11-22 19:04:21,295:INFO:Initializing SVM - Linear Kernel
+2026-11-22 19:04:21,295:INFO:Total runtime is 1.4773231108983358 minutes
+2026-11-22 19:04:21,299:INFO:SubProcess create_model() called ==================================
+2026-11-22 19:04:21,300:INFO:Initializing create_model()
+2026-11-22 19:04:21,300:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, estimator=svm, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7000f1797d30>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-11-22 19:04:21,300:INFO:Checking exceptions
+2026-11-22 19:04:21,300:INFO:Importing libraries
+2026-11-22 19:04:21,300:INFO:Copying training dataset
+2026-11-22 19:04:21,371:INFO:Defining folds
+2026-11-22 19:04:21,372:INFO:Declaring metric variables
+2026-11-22 19:04:21,376:INFO:Importing untrained model
+2026-11-22 19:04:21,382:INFO:SVM - Linear Kernel Imported successfully
+2026-11-22 19:04:21,390:INFO:Starting cross validation
+2026-11-22 19:04:21,395:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2026-11-22 19:04:23,576:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:23,746:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:23,917:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:24,225:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:24,356:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:24,486:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:25,696:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:25,831:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:25,959:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:27,337:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:27,469:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:27,600:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:30,078:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:30,210:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:30,342:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:30,524:INFO:Calculating mean and std
+2026-11-22 19:04:30,525:INFO:Creating metrics dataframe
+2026-11-22 19:04:30,527:INFO:Uploading results into container
+2026-11-22 19:04:30,529:INFO:Uploading model into container now
+2026-11-22 19:04:30,530:INFO:_master_model_container: 5
+2026-11-22 19:04:30,530:INFO:_display_container: 2
+2026-11-22 19:04:30,530:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=42, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2026-11-22 19:04:30,531:INFO:create_model() successfully completed......................................
+2026-11-22 19:04:30,620:INFO:SubProcess create_model() end ==================================
+2026-11-22 19:04:30,620:INFO:Creating metrics dataframe
+2026-11-22 19:04:30,629:INFO:Initializing Ridge Classifier
+2026-11-22 19:04:30,629:INFO:Total runtime is 1.6328903595606485 minutes
+2026-11-22 19:04:30,635:INFO:SubProcess create_model() called ==================================
+2026-11-22 19:04:30,635:INFO:Initializing create_model()
+2026-11-22 19:04:30,636:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, estimator=ridge, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7000f1797d30>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-11-22 19:04:30,636:INFO:Checking exceptions
+2026-11-22 19:04:30,636:INFO:Importing libraries
+2026-11-22 19:04:30,636:INFO:Copying training dataset
+2026-11-22 19:04:30,707:INFO:Defining folds
+2026-11-22 19:04:30,707:INFO:Declaring metric variables
+2026-11-22 19:04:30,713:INFO:Importing untrained model
+2026-11-22 19:04:30,717:INFO:Ridge Classifier Imported successfully
+2026-11-22 19:04:30,725:INFO:Starting cross validation
+2026-11-22 19:04:30,730:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2026-11-22 19:04:32,143:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:32,324:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:32,476:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:32,971:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:33,156:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:33,310:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:33,362:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:33,496:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:33,671:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:35,648:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:35,777:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:35,908:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:37,477:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:37,610:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:37,741:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:37,922:INFO:Calculating mean and std
+2026-11-22 19:04:37,923:INFO:Creating metrics dataframe
+2026-11-22 19:04:37,926:INFO:Uploading results into container
+2026-11-22 19:04:37,927:INFO:Uploading model into container now
+2026-11-22 19:04:37,928:INFO:_master_model_container: 6
+2026-11-22 19:04:37,928:INFO:_display_container: 2
+2026-11-22 19:04:37,929:INFO:RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, positive=False, random_state=42, solver='auto',
+                tol=0.0001)
+2026-11-22 19:04:37,929:INFO:create_model() successfully completed......................................
+2026-11-22 19:04:38,016:INFO:SubProcess create_model() end ==================================
+2026-11-22 19:04:38,017:INFO:Creating metrics dataframe
+2026-11-22 19:04:38,025:INFO:Initializing Random Forest Classifier
+2026-11-22 19:04:38,026:INFO:Total runtime is 1.7561617692311604 minutes
+2026-11-22 19:04:38,030:INFO:SubProcess create_model() called ==================================
+2026-11-22 19:04:38,031:INFO:Initializing create_model()
+2026-11-22 19:04:38,031:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, estimator=rf, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7000f1797d30>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-11-22 19:04:38,031:INFO:Checking exceptions
+2026-11-22 19:04:38,031:INFO:Importing libraries
+2026-11-22 19:04:38,031:INFO:Copying training dataset
+2026-11-22 19:04:38,101:INFO:Defining folds
+2026-11-22 19:04:38,102:INFO:Declaring metric variables
+2026-11-22 19:04:38,106:INFO:Importing untrained model
+2026-11-22 19:04:38,110:INFO:Random Forest Classifier Imported successfully
+2026-11-22 19:04:38,119:INFO:Starting cross validation
+2026-11-22 19:04:38,124:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2026-11-22 19:04:52,403:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:52,601:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:04:52,920:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:06,524:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:07,358:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:08,202:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:15,792:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:16,136:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:16,570:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:31,373:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:31,686:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:31,936:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:34,941:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:35,060:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:35,179:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:35,357:INFO:Calculating mean and std
+2026-11-22 19:05:35,358:INFO:Creating metrics dataframe
+2026-11-22 19:05:35,373:INFO:Uploading results into container
+2026-11-22 19:05:35,377:INFO:Uploading model into container now
+2026-11-22 19:05:35,378:INFO:_master_model_container: 7
+2026-11-22 19:05:35,378:INFO:_display_container: 2
+2026-11-22 19:05:35,379:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=42, verbose=0,
+                       warm_start=False)
+2026-11-22 19:05:35,379:INFO:create_model() successfully completed......................................
+2026-11-22 19:05:35,490:INFO:SubProcess create_model() end ==================================
+2026-11-22 19:05:35,490:INFO:Creating metrics dataframe
+2026-11-22 19:05:35,500:INFO:Initializing Quadratic Discriminant Analysis
+2026-11-22 19:05:35,500:INFO:Total runtime is 2.714069354534149 minutes
+2026-11-22 19:05:35,505:INFO:SubProcess create_model() called ==================================
+2026-11-22 19:05:35,505:INFO:Initializing create_model()
+2026-11-22 19:05:35,506:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, estimator=qda, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7000f1797d30>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-11-22 19:05:35,506:INFO:Checking exceptions
+2026-11-22 19:05:35,506:INFO:Importing libraries
+2026-11-22 19:05:35,506:INFO:Copying training dataset
+2026-11-22 19:05:35,576:INFO:Defining folds
+2026-11-22 19:05:35,576:INFO:Declaring metric variables
+2026-11-22 19:05:35,582:INFO:Importing untrained model
+2026-11-22 19:05:35,589:INFO:Quadratic Discriminant Analysis Imported successfully
+2026-11-22 19:05:35,600:INFO:Starting cross validation
+2026-11-22 19:05:35,609:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2026-11-22 19:05:36,736:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2026-11-22 19:05:37,707:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:37,944:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:38,106:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:38,135:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2026-11-22 19:05:38,758:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:38,925:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:39,035:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-11-22 19:05:39,086:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:39,372:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2026-11-22 19:05:40,082:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:40,208:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:40,333:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:42,815:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2026-11-22 19:05:43,386:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/discriminant_analysis.py:935: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2026-11-22 19:05:43,836:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:43,963:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:44,091:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:44,259:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:44,384:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:44,505:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:44,674:INFO:Calculating mean and std
+2026-11-22 19:05:44,676:INFO:Creating metrics dataframe
+2026-11-22 19:05:44,680:INFO:Uploading results into container
+2026-11-22 19:05:44,680:INFO:Uploading model into container now
+2026-11-22 19:05:44,681:INFO:_master_model_container: 8
+2026-11-22 19:05:44,682:INFO:_display_container: 2
+2026-11-22 19:05:44,683:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2026-11-22 19:05:44,683:INFO:create_model() successfully completed......................................
+2026-11-22 19:05:44,782:INFO:SubProcess create_model() end ==================================
+2026-11-22 19:05:44,783:INFO:Creating metrics dataframe
+2026-11-22 19:05:44,791:INFO:Initializing Ada Boost Classifier
+2026-11-22 19:05:44,791:INFO:Total runtime is 2.8689223607381185 minutes
+2026-11-22 19:05:44,795:INFO:SubProcess create_model() called ==================================
+2026-11-22 19:05:44,796:INFO:Initializing create_model()
+2026-11-22 19:05:44,796:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, estimator=ada, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7000f1797d30>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-11-22 19:05:44,796:INFO:Checking exceptions
+2026-11-22 19:05:44,796:INFO:Importing libraries
+2026-11-22 19:05:44,796:INFO:Copying training dataset
+2026-11-22 19:05:44,861:INFO:Defining folds
+2026-11-22 19:05:44,861:INFO:Declaring metric variables
+2026-11-22 19:05:44,866:INFO:Importing untrained model
+2026-11-22 19:05:44,870:INFO:Ada Boost Classifier Imported successfully
+2026-11-22 19:05:44,877:INFO:Starting cross validation
+2026-11-22 19:05:44,882:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2026-11-22 19:05:45,439:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2026-11-22 19:05:46,013:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2026-11-22 19:05:47,273:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2026-11-22 19:05:48,218:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2026-11-22 19:05:50,194:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:50,330:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:50,463:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:54,738:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:54,896:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:55,057:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:05:55,507:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/ensemble/_weight_boosting.py:519: FutureWarning: The SAMME.R algorithm (the default) is deprecated and will be removed in 1.6. Use the SAMME algorithm to circumvent this warning.
+  warnings.warn(
+
+2026-11-22 19:05:59,953:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:06:00,078:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:06:00,203:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:06:04,396:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:06:04,521:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:06:04,645:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:06:13,076:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:06:13,199:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:06:13,322:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:06:13,492:INFO:Calculating mean and std
+2026-11-22 19:06:13,493:INFO:Creating metrics dataframe
+2026-11-22 19:06:13,495:INFO:Uploading results into container
+2026-11-22 19:06:13,496:INFO:Uploading model into container now
+2026-11-22 19:06:13,497:INFO:_master_model_container: 9
+2026-11-22 19:06:13,497:INFO:_display_container: 2
+2026-11-22 19:06:13,497:INFO:AdaBoostClassifier(algorithm='SAMME.R', estimator=None, learning_rate=1.0,
+                   n_estimators=50, random_state=42)
+2026-11-22 19:06:13,497:INFO:create_model() successfully completed......................................
+2026-11-22 19:06:13,576:INFO:SubProcess create_model() end ==================================
+2026-11-22 19:06:13,577:INFO:Creating metrics dataframe
+2026-11-22 19:06:13,585:INFO:Initializing Gradient Boosting Classifier
+2026-11-22 19:06:13,586:INFO:Total runtime is 3.348827628294627 minutes
+2026-11-22 19:06:13,589:INFO:SubProcess create_model() called ==================================
+2026-11-22 19:06:13,590:INFO:Initializing create_model()
+2026-11-22 19:06:13,590:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, estimator=gbc, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7000f1797d30>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-11-22 19:06:13,590:INFO:Checking exceptions
+2026-11-22 19:06:13,590:INFO:Importing libraries
+2026-11-22 19:06:13,591:INFO:Copying training dataset
+2026-11-22 19:06:13,652:INFO:Defining folds
+2026-11-22 19:06:13,652:INFO:Declaring metric variables
+2026-11-22 19:06:13,656:INFO:Importing untrained model
+2026-11-22 19:06:13,661:INFO:Gradient Boosting Classifier Imported successfully
+2026-11-22 19:06:13,669:INFO:Starting cross validation
+2026-11-22 19:06:13,674:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2026-11-22 19:06:33,723:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:06:33,873:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:06:33,999:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:06:55,730:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:06:55,860:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:06:55,991:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:07:17,971:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:07:18,120:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:07:18,248:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:07:36,549:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:07:36,672:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:07:36,795:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:12,045:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:12,165:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:12,286:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:12,455:INFO:Calculating mean and std
+2026-11-22 19:08:12,457:INFO:Creating metrics dataframe
+2026-11-22 19:08:12,459:INFO:Uploading results into container
+2026-11-22 19:08:12,460:INFO:Uploading model into container now
+2026-11-22 19:08:12,461:INFO:_master_model_container: 10
+2026-11-22 19:08:12,461:INFO:_display_container: 2
+2026-11-22 19:08:12,461:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=42, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2026-11-22 19:08:12,461:INFO:create_model() successfully completed......................................
+2026-11-22 19:08:12,539:INFO:SubProcess create_model() end ==================================
+2026-11-22 19:08:12,539:INFO:Creating metrics dataframe
+2026-11-22 19:08:12,548:INFO:Initializing Linear Discriminant Analysis
+2026-11-22 19:08:12,548:INFO:Total runtime is 5.3315369367599486 minutes
+2026-11-22 19:08:12,552:INFO:SubProcess create_model() called ==================================
+2026-11-22 19:08:12,553:INFO:Initializing create_model()
+2026-11-22 19:08:12,553:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, estimator=lda, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7000f1797d30>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-11-22 19:08:12,553:INFO:Checking exceptions
+2026-11-22 19:08:12,553:INFO:Importing libraries
+2026-11-22 19:08:12,553:INFO:Copying training dataset
+2026-11-22 19:08:12,615:INFO:Defining folds
+2026-11-22 19:08:12,615:INFO:Declaring metric variables
+2026-11-22 19:08:12,619:INFO:Importing untrained model
+2026-11-22 19:08:12,623:INFO:Linear Discriminant Analysis Imported successfully
+2026-11-22 19:08:12,630:INFO:Starting cross validation
+2026-11-22 19:08:12,635:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2026-11-22 19:08:14,245:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:14,375:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:14,503:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:14,805:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:14,983:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:15,169:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:16,051:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:16,205:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:16,361:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:17,303:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:17,455:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:17,606:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:20,040:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:20,161:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:20,285:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:20,453:INFO:Calculating mean and std
+2026-11-22 19:08:20,454:INFO:Creating metrics dataframe
+2026-11-22 19:08:20,457:INFO:Uploading results into container
+2026-11-22 19:08:20,458:INFO:Uploading model into container now
+2026-11-22 19:08:20,458:INFO:_master_model_container: 11
+2026-11-22 19:08:20,458:INFO:_display_container: 2
+2026-11-22 19:08:20,459:INFO:LinearDiscriminantAnalysis(covariance_estimator=None, n_components=None,
+                           priors=None, shrinkage=None, solver='svd',
+                           store_covariance=False, tol=0.0001)
+2026-11-22 19:08:20,459:INFO:create_model() successfully completed......................................
+2026-11-22 19:08:20,536:INFO:SubProcess create_model() end ==================================
+2026-11-22 19:08:20,537:INFO:Creating metrics dataframe
+2026-11-22 19:08:20,546:INFO:Initializing Extra Trees Classifier
+2026-11-22 19:08:20,546:INFO:Total runtime is 5.464833454291026 minutes
+2026-11-22 19:08:20,549:INFO:SubProcess create_model() called ==================================
+2026-11-22 19:08:20,550:INFO:Initializing create_model()
+2026-11-22 19:08:20,550:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, estimator=et, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7000f1797d30>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-11-22 19:08:20,550:INFO:Checking exceptions
+2026-11-22 19:08:20,550:INFO:Importing libraries
+2026-11-22 19:08:20,550:INFO:Copying training dataset
+2026-11-22 19:08:20,611:INFO:Defining folds
+2026-11-22 19:08:20,611:INFO:Declaring metric variables
+2026-11-22 19:08:20,616:INFO:Importing untrained model
+2026-11-22 19:08:20,620:INFO:Extra Trees Classifier Imported successfully
+2026-11-22 19:08:20,628:INFO:Starting cross validation
+2026-11-22 19:08:20,632:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2026-11-22 19:08:26,543:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:27,107:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:27,574:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:35,272:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:35,787:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:36,232:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:45,339:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:45,824:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:46,390:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:54,416:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:54,615:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:08:54,775:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:09:00,541:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:09:00,667:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:09:00,789:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:09:00,959:INFO:Calculating mean and std
+2026-11-22 19:09:00,961:INFO:Creating metrics dataframe
+2026-11-22 19:09:00,963:INFO:Uploading results into container
+2026-11-22 19:09:00,965:INFO:Uploading model into container now
+2026-11-22 19:09:00,965:INFO:_master_model_container: 12
+2026-11-22 19:09:00,966:INFO:_display_container: 2
+2026-11-22 19:09:00,966:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                     oob_score=False, random_state=42, verbose=0,
+                     warm_start=False)
+2026-11-22 19:09:00,966:INFO:create_model() successfully completed......................................
+2026-11-22 19:09:01,052:INFO:SubProcess create_model() end ==================================
+2026-11-22 19:09:01,052:INFO:Creating metrics dataframe
+2026-11-22 19:09:01,062:INFO:Initializing Light Gradient Boosting Machine
+2026-11-22 19:09:01,063:INFO:Total runtime is 6.14011347691218 minutes
+2026-11-22 19:09:01,067:INFO:SubProcess create_model() called ==================================
+2026-11-22 19:09:01,068:INFO:Initializing create_model()
+2026-11-22 19:09:01,068:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, estimator=lightgbm, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7000f1797d30>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-11-22 19:09:01,068:INFO:Checking exceptions
+2026-11-22 19:09:01,068:INFO:Importing libraries
+2026-11-22 19:09:01,068:INFO:Copying training dataset
+2026-11-22 19:09:01,133:INFO:Defining folds
+2026-11-22 19:09:01,133:INFO:Declaring metric variables
+2026-11-22 19:09:01,137:INFO:Importing untrained model
+2026-11-22 19:09:01,143:INFO:Light Gradient Boosting Machine Imported successfully
+2026-11-22 19:09:01,151:INFO:Starting cross validation
+2026-11-22 19:09:01,156:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2026-11-22 19:09:04,498:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-11-22 19:09:05,951:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-11-22 19:09:13,151:INFO:[LightGBM] [Info] Number of positive: 37728, number of negative: 37728
+2026-11-22 19:09:14,054:INFO:[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.460639 seconds.
+2026-11-22 19:09:14,054:INFO:You can set `force_row_wise=true` to remove the overhead.
+2026-11-22 19:09:14,054:INFO:And if memory is not enough, you can set `force_col_wise=true`.
+2026-11-22 19:09:14,061:INFO:[LightGBM] [Info] Total Bins 16848
+2026-11-22 19:09:14,068:INFO:[LightGBM] [Info] Number of data points in the train set: 75456, number of used features: 69
+2026-11-22 19:09:14,079:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2026-11-22 19:09:17,733:INFO:[LightGBM] [Info] Number of positive: 50625, number of negative: 50625
+2026-11-22 19:09:18,942:INFO:[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.634219 seconds.
+2026-11-22 19:09:18,942:INFO:You can set `force_row_wise=true` to remove the overhead.
+2026-11-22 19:09:18,942:INFO:And if memory is not enough, you can set `force_col_wise=true`.
+2026-11-22 19:09:18,942:INFO:[LightGBM] [Info] Total Bins 16850
+2026-11-22 19:09:18,951:INFO:[LightGBM] [Info] Number of data points in the train set: 101250, number of used features: 69
+2026-11-22 19:09:18,966:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2026-11-22 19:11:17,246:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:17,816:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:18,306:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:43,016:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:43,463:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:43,909:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:55,210:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:55,526:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:55,854:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:56,578:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:56,739:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:56,869:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:58,191:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:58,310:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:58,430:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:58,597:INFO:Calculating mean and std
+2026-11-22 19:11:58,599:INFO:Creating metrics dataframe
+2026-11-22 19:11:58,602:INFO:Uploading results into container
+2026-11-22 19:11:58,603:INFO:Uploading model into container now
+2026-11-22 19:11:58,604:INFO:_master_model_container: 13
+2026-11-22 19:11:58,605:INFO:_display_container: 2
+2026-11-22 19:11:58,606:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=42, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2026-11-22 19:11:58,606:INFO:create_model() successfully completed......................................
+2026-11-22 19:11:58,704:INFO:SubProcess create_model() end ==================================
+2026-11-22 19:11:58,704:INFO:Creating metrics dataframe
+2026-11-22 19:11:58,713:INFO:Initializing Dummy Classifier
+2026-11-22 19:11:58,713:INFO:Total runtime is 9.100957854588826 minutes
+2026-11-22 19:11:58,717:INFO:SubProcess create_model() called ==================================
+2026-11-22 19:11:58,718:INFO:Initializing create_model()
+2026-11-22 19:11:58,718:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, estimator=dummy, fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7000f1797d30>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-11-22 19:11:58,718:INFO:Checking exceptions
+2026-11-22 19:11:58,718:INFO:Importing libraries
+2026-11-22 19:11:58,719:INFO:Copying training dataset
+2026-11-22 19:11:58,783:INFO:Defining folds
+2026-11-22 19:11:58,783:INFO:Declaring metric variables
+2026-11-22 19:11:58,787:INFO:Importing untrained model
+2026-11-22 19:11:58,791:INFO:Dummy Classifier Imported successfully
+2026-11-22 19:11:58,799:INFO:Starting cross validation
+2026-11-22 19:11:58,804:INFO:Cross validating with TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), n_jobs=-1
+2026-11-22 19:11:59,615:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:59,741:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:11:59,811:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-11-22 19:11:59,908:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:12:00,464:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:12:00,617:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:12:00,715:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-11-22 19:12:00,785:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:12:02,018:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:12:02,171:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:12:02,256:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-11-22 19:12:02,324:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:12:02,807:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:12:02,957:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:12:03,040:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-11-22 19:12:03,108:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:12:04,488:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:12:04,604:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:12:04,669:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-11-22 19:12:04,721:WARNING:/home/g/miniconda3/envs/aa2pycaret/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1561: UserWarning: Note that pos_label (set to 'Yes') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2026-11-22 19:12:04,887:INFO:Calculating mean and std
+2026-11-22 19:12:04,889:INFO:Creating metrics dataframe
+2026-11-22 19:12:04,891:INFO:Uploading results into container
+2026-11-22 19:12:04,892:INFO:Uploading model into container now
+2026-11-22 19:12:04,892:INFO:_master_model_container: 14
+2026-11-22 19:12:04,893:INFO:_display_container: 2
+2026-11-22 19:12:04,893:INFO:DummyClassifier(constant=None, random_state=42, strategy='prior')
+2026-11-22 19:12:04,893:INFO:create_model() successfully completed......................................
+2026-11-22 19:12:04,968:INFO:SubProcess create_model() end ==================================
+2026-11-22 19:12:04,969:INFO:Creating metrics dataframe
+2026-11-22 19:12:04,988:INFO:Initializing create_model()
+2026-11-22 19:12:04,988:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=42, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=TimeSeriesSplit(gap=0, max_train_size=None, n_splits=5, test_size=None), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2026-11-22 19:12:04,988:INFO:Checking exceptions
+2026-11-22 19:12:04,990:INFO:Importing libraries
+2026-11-22 19:12:04,991:INFO:Copying training dataset
+2026-11-22 19:12:05,050:INFO:Defining folds
+2026-11-22 19:12:05,050:INFO:Declaring metric variables
+2026-11-22 19:12:05,051:INFO:Importing untrained model
+2026-11-22 19:12:05,051:INFO:Declaring custom model
+2026-11-22 19:12:05,052:INFO:Light Gradient Boosting Machine Imported successfully
+2026-11-22 19:12:05,055:INFO:Cross validation set to False
+2026-11-22 19:12:05,055:INFO:Fitting Model
+2026-11-22 19:12:08,036:INFO:[LightGBM] [Info] Number of positive: 76557, number of negative: 76557
+2026-11-22 19:12:08,104:INFO:[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.027153 seconds.
+2026-11-22 19:12:08,104:INFO:You can set `force_row_wise=true` to remove the overhead.
+2026-11-22 19:12:08,104:INFO:And if memory is not enough, you can set `force_col_wise=true`.
+2026-11-22 19:12:08,104:INFO:[LightGBM] [Info] Total Bins 16849
+2026-11-22 19:12:08,107:INFO:[LightGBM] [Info] Number of data points in the train set: 153114, number of used features: 69
+2026-11-22 19:12:08,108:INFO:[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.500000 -> initscore=0.000000
+2026-11-22 19:12:09,940:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=42, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2026-11-22 19:12:09,941:INFO:create_model() successfully completed......................................
+2026-11-22 19:12:10,048:INFO:_master_model_container: 14
+2026-11-22 19:12:10,049:INFO:_display_container: 2
+2026-11-22 19:12:10,049:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=42, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2026-11-22 19:12:10,050:INFO:compare_models() successfully completed......................................
+2026-11-22 19:12:10,051:INFO:Initializing tune_model()
+2026-11-22 19:12:10,051:INFO:tune_model(estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=42, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=None, round=4, n_iter=10, custom_grid=None, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x70013c1c1d80>)
+2026-11-22 19:12:10,051:INFO:Checking exceptions
+2026-11-22 19:12:10,085:INFO:Copying training dataset
+2026-11-22 19:12:10,127:INFO:Checking base model
+2026-11-22 19:12:10,127:INFO:Base model : Light Gradient Boosting Machine
+2026-11-22 19:12:10,131:INFO:Declaring metric variables
+2026-11-22 19:12:10,134:INFO:Defining Hyperparameters
+2026-11-22 19:12:10,222:INFO:Tuning with n_jobs=-1
+2026-11-22 19:12:10,222:INFO:Initializing RandomizedSearchCV

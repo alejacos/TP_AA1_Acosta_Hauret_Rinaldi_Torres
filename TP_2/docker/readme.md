@@ -16,16 +16,29 @@ Presiona el botón Try it out (arriba a la derecha del cuadro desplegado).
 
 En el recuadro de texto Request body, borra lo que aparece y pega un diccionario JSON con datos meteorológicos, por ejemplo:
 
+a) con lluvia:
 JSON
 {
-  "MinTemp": 13.4,
-  "MaxTemp": 22.9,
-  "Rainfall": 0.6,
-  "Humidity3pm": 22.0,
-  "Pressure3pm": 1007.1,
-  "RainToday": 0
+  "MinTemp": 16.5,
+  "MaxTemp": 20.2,
+  "Rainfall": 18.4,
+  "Evaporation": 2.0,
+  "Sunshine": 0.5,
+  "WindGustSpeed": 65.0,
+  "WindSpeed9am": 24.0,
+  "WindSpeed3pm": 30.0,
+  "Humidity9am": 92.0,
+  "Humidity3pm": 89.0,
+  "Pressure9am": 1004.2,
+  "Pressure3pm": 1001.5,
+  "Cloud9am": 8.0,
+  "Cloud3pm": 8.0,
+  "Temp9am": 17.8,
+  "Temp3pm": 18.5,
+  "RainToday": 1
 }
 
+b)sin lluvia:
 
 {
   "MinTemp": 14.0,
