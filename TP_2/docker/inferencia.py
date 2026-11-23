@@ -32,7 +32,7 @@ def predecir_lluvia(datos: dict):
     X_final = df_entrada.astype("float32").values
     probabilidad = float(modelo.predict(X_final, verbose=0)[0][0])
     
-    umbral = 0.5
+    umbral = 0.6001
     prediccion = "Yes" if probabilidad >= umbral else "No"
     
     return {
