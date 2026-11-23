@@ -68,15 +68,20 @@ Una vez activo el contenedor, puedes interactuar con la documentación automáti
 
 ```json
 {
+  "Date": "2026-10-10",
+  "Location": "Sydney",
   "MinTemp": 16.5,
   "MaxTemp": 20.2,
   "Rainfall": 18.4,
   "Evaporation": 2.0,
   "Sunshine": 0.5,
+  "WindGustDir": "S",
   "WindGustSpeed": 65.0,
+  "WindDir9am": "SE",
+  "WindDir3pm": "SE",
   "WindSpeed9am": 24.0,
   "WindSpeed3pm": 30.0,
-  "Humidity9am": 92.0,
+  "Humidity9am": 82.0,
   "Humidity3pm": 89.0,
   "Pressure9am": 1004.2,
   "Pressure3pm": 1001.5,
@@ -84,7 +89,7 @@ Una vez activo el contenedor, puedes interactuar con la documentación automáti
   "Cloud3pm": 8.0,
   "Temp9am": 17.8,
   "Temp3pm": 18.5,
-  "RainToday": 1
+  "RainToday": "No"
 }
 ```
 
@@ -92,23 +97,28 @@ Una vez activo el contenedor, puedes interactuar con la documentación automáti
 
 ```json
 {
-  "MinTemp": 14.0,
-  "MaxTemp": 28.5,
-  "Rainfall": 0.0,
-  "Evaporation": 8.4,
-  "Sunshine": 11.2,
-  "WindGustSpeed": 28.0,
-  "WindSpeed9am": 11.0,
-  "WindSpeed3pm": 15.0,
-  "Humidity9am": 45.0,
-  "Humidity3pm": 24.0,
-  "Pressure9am": 1024.5,
-  "Pressure3pm": 1022.0,
-  "Cloud9am": 1.0,
-  "Cloud3pm": 1.0,
-  "Temp9am": 19.5,
-  "Temp3pm": 27.2,
-  "RainToday": 0
+  "Date": "2026-10-10",
+  "Location": "Sydney",
+  "MinTemp": 16.5,
+  "MaxTemp": 20.2,
+  "Rainfall": 18.4,
+  "Evaporation": 2.0,
+  "Sunshine": 0.5,
+  "WindGustDir": "S",
+  "WindGustSpeed": 65.0,
+  "WindDir9am": "SE",
+  "WindDir3pm": "SE",
+  "WindSpeed9am": 24.0,
+  "WindSpeed3pm": 30.0,
+  "Humidity9am": 12.0,
+  "Humidity3pm": 19.0,
+  "Pressure9am": 1024.2,
+  "Pressure3pm": 1021.5,
+  "Cloud9am": 2.0,
+  "Cloud3pm": 8.0,
+  "Temp9am": 17.8,
+  "Temp3pm": 18.5,
+  "RainToday": "No"
 }
 ```
 

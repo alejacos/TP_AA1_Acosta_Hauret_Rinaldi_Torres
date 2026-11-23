@@ -10,6 +10,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY inferencia.py .
 COPY preprocesador.joblib .
 COPY modelo_lluvia_australia_tuned.keras .
+COPY locations_with_coordinates.csv .
 
 EXPOSE 8000
 
